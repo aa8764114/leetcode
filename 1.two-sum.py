@@ -1,5 +1,5 @@
 # @lc app=leetcode id=1 lang=python3
-from typing import List, Optional, Dict
+from typing import List
 
 
 # @lc code=start
