@@ -1,14 +1,18 @@
 # @lc app=leetcode id=1 lang=python3
 from typing import List, Optional, Dict
+
+
 # @lc code=start
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        prevMap = {} # val : index
+        prevMap = {}  # val : index
         for i, n in enumerate(nums):
             diff = target - n
             if diff in prevMap:
                 return [prevMap[diff], i]
             prevMap[n] = i
+
+
 # @lc code=end
 if __name__ == "__main__":
     sol = Solution()
