@@ -6,13 +6,7 @@ from collections import Counter
 # @lc code=start
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        counts = Counter(nums)
-        for i in nums:
-            if counts[i] > 1:
-                print("TRUE")
-                return True
-        print("FALSE")
-        return False
+        return len(nums) != len(set(nums))
 
 
 # @lc code=end
