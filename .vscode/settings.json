@@ -1,0 +1,24 @@
+{
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.intelliSenseMode": "macos-clang-arm64",
+    "files.associations": {
+        "*.cpp": "cpp",
+        "vector": "cpp",
+        "iostream": "cpp"
+    },
+    "leetcode.defaultLanguage": "cpp",
+    "leetcode.filePath": {
+        "default": {
+            "folder": "",
+            "filename": "${id}.${kebab-case-name}.${ext}"
+        },
+        "cpp": {
+            "folder": "cpp",
+            "filename": "${id}.${kebab-case-name}.cpp"
+        },
+        "python3": {
+            "folder": "python",
+            "filename": "${id}.${kebab-case-name}.py"
+        }
+    }
+}

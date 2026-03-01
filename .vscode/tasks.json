@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C++/Python: Build and Run",
+            "type": "shell",
+            "command": "if [[ \"${fileExtname}\" == \".cpp\" ]]; then clang++ -std=c++17 -g \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}\" && \"${fileDirname}/${fileBasenameNoExtension}\"; elif [[ \"${fileExtname}\" == \".py\" ]]; then python3 \"${file}\"; fi",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "focus": true,
+                "clear": true,
+                "showReuseMessage": false
+            },
+            "problemMatcher": []
+        }
+    ]
+}
